@@ -51,7 +51,11 @@ body {
     transition: all .5s;
 }
 
-.pricing--card p:after {
+.pricing--card-plan_title{
+    font-size:1.2rem;
+}
+
+.pricing--card p:after, .pricing--card-plan_title:after {
     content: " ";
     margin-top: 1.3rem;
     height: 0.02rem;
