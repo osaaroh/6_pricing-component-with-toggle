@@ -82,7 +82,7 @@ body {
     width: 100%;
     background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #fff !important;
     border-radius: 3px;
     border: none;
     text-transform: uppercase;
