@@ -1,0 +1,243 @@
+/*Use along with exp_index.html for experimentation*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(240, 11%, 95%);
+    overflow-x: hidden;
+}
+
+.main-section {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 4rem;
+    margin: 0 auto;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle p {
+    display: inline;
+    margin: 1rem;
+}
+
+.pricing {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pricing--card {
+    padding: 3rem;
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 8px;
+    margin: 1rem 0 1rem 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.pricing--card p:after,
+.pricing--card div:after {
+    content: " ";
+    margin-top: 1.3rem;
+    height: 0.02rem;
+    width: 100%;
+    background: hsl(240, 78%, 98%);
+    display: block;
+}
+
+.pricing--card-center {
+    /* padding: 4rem 3rem 4rem 3rem; */
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    margin: 0;
+}
+
+.pricing--card p {
+    margin: 1.3rem 0;
+}
+
+.pricing--card button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    width: 100%;
+    background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.pricing--card button:hover {
+    background: #fff;
+    color: hsl(237, 63%, 64%);
+    border-radius: 3px;
+    border: 1px solid hsl(237, 63%, 64%);
+    transition: all .5s;
+}
+
+.pricing--card-center button {
+    background: #fff;
+    color: hsl(233, 13%, 49%)
+}
+
+.pricing--card-center button:hover {
+    background: hsl(237, 63%, 64%) !important;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+
+.pricing--card-cost_month div,
+.pricing--card-cost_annual div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.pricing--card-cost_month span,
+.pricing--card-cost_annual span {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-right: 0.2rem;
+}
+
+.pricing--card-cost_month div p:after,
+.pricing--card-cost_annual div p:after {
+    margin-top: 0;
+    height: 0 !important;
+    width: 0;
+    background: hsl(240, 78%, 98%);
+    display: none;
+}
+
+.bg-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bg-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*=======================Custom Toggle====================*/
+
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: hsl(237, 63%, 64%);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px hsl(237, 63%, 64%);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.pricing--card-cost_month {
+    display: none;
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+    z-index: -1;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 683px) {
+    .pricing {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pricing--card {
+        margin: 1.2rem;
+        padding: 2 rem;
+        background-color: rgb(255, 255, 255) !important;
+        border-radius: 8px;
+    }
+    .main-section {
+        padding: 1rem;
+        margin: 0 auto;
+        font-weight: 600;
+    }
+}

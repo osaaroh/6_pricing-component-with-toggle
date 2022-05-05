@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" tydive="image/png" sizes="32x32" href="./images/favicon-32x32.divng">
+
+    <title>Pricing Component | Frontend Mentor</title>
+</head>
+
+<body>
+    <div class="main-section">
+
+        <h1 class="header--text">Our Pricing</h1>
+
+        <div class="toggle">
+            <p>Annually</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox" id="cb">
+              <span class="slider round"></span>
+          </label>
+            <p>Monthly</p>
+        </div>
+
+        <section class="pricing">
+
+            <div class="pricing--card">
+                <p class="pricing--card-plan_title">Basic</p>
+                <p class="pricing--card-cost_month"><span>&dollar;</span>19.99</p>
+                <p class="pricing--card-cost_annual"><span>&dollar;</span>199.99</p>
+                <p class="pricing--card-storage">500 GB Storage</p>
+                <p class="pricing--card-users">2 Users Allowed</p>
+                <p class="pricing--card-bandwidth">Send up to 3 GB </p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="pricing--card pricing--card-center">
+                <p class="pricing--card-plan_title">Professional</p>
+                <p class="pricing--card-cost_month"><span>&dollar;</span>24.99</p>
+                <p class="pricing--card-cost_annual"><span>&dollar;</span>249.99</p>
+                <p class="pricing--card-storage">1 TB Storage</p>
+                <p class="pricing--card-users">5 Users Allowed</p>
+                <p class="pricing--card-bandwidth">Send up to 10 GB </p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="pricing--card">
+                <p class="pricing--card-plan_title">Master</p>
+                <p class="pricing--card-cost_month"><span>&dollar;</span>39.99</p>
+                <p class="pricing--card-cost_annual"><span>&dollar;</span>399.99</p>
+                <p class="pricing--card-storage">2 TB Storage</p>
+                <p class="pricing--card-users">10 Users Allowed</p>
+                <p class="pricing--card-bandwidth">Send up to 20 GB </p>
+                <button>Learn More</button>
+            </div>
+
+        </section>
+
+    </div>
+    <img class='bg-top' src="images/bg-top.svg" alt=""><img class='bg-button' src="images/bg-bottom.svg" alt="">
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
