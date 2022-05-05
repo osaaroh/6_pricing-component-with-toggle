@@ -52,7 +52,7 @@ body {
 }
 
 .pricing--card-plan_title{
-    font-size:1.2rem;
+    font-size:1.05rem;
 }
 
 .pricing--card p:after, .pricing--card-plan_title:after {
@@ -82,6 +82,7 @@ body {
     width: 100%;
     background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: #fff;
+    border: 1px solid hsl(237, 63%, 64%);
     border-radius: 3px;
     border: none;
     text-transform: uppercase;
@@ -99,7 +100,8 @@ body {
 
 .pricing--card-center button {
     background: #fff;
-    color: hsl(233, 13%, 49%)
+    color: hsl(233, 13%, 49%);
+    border: 1px solid #fff;
 }
 
 .pricing--card-center button:hover {
