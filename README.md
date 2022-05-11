@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Pricing Component](https://peppy-bubblegum-f87f78.netlify.app)
+- Live Site URL: [Pricing Component](https://pricing-component-o.netlify.app)
 
 ## My process
 
